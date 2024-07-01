@@ -78,6 +78,7 @@ resource "aws_instance" "apache2_server" {
   ]
 }
 
+
 # Uncomment for Section 6.4.1 - New Feature Request
 resource "aws_instance" "apache2_server_1" {
   ami           = data.aws_ami.ubuntu.id
