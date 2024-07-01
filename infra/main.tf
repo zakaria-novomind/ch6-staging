@@ -92,7 +92,9 @@ resource "aws_instance" "apache2_server_1" {
     Name = "ec2-${local.name-suffix}"
   }
 
+
   depends_on = [
     module.generic_sg_egress
   ]
 }
+
