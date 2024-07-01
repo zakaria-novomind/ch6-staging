@@ -55,7 +55,7 @@ jobs:
         env:
           PLAN: "terraform\n${{ steps.plan.outputs.stdout }}"
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.MY_GH_TOKEN }}
           script: |
             const output = `## Terraform Staging Infra Plan
 
